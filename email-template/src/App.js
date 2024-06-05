@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 import {Button, Modal, Form} from 'react-bootstrap'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee} from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
@@ -25,10 +27,8 @@ function App() {
     {/* <!------------------- 1rd Column --------------------------------------> */}
               <div class="col-md-4 col-sm-12 c1">
                 <div class="input-group">
-                    <div class="icon-wrapper">
-                        <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    </div>
-                    <div id="welcome">Welcome, Brock!</div>
+                    <FontAwesomeIcon className='icon-wrapper' icon={faCoffee} size="2xs" />
+                    <div id="welcome">Welcome, Frankie!</div>
                 </div>    
                 {/* <!---------------------------------------------> */}
                     <button class="btn btn-warning compose" type="button" onClick={handleShow}>COMPOSE</button>
