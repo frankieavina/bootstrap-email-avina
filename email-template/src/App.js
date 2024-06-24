@@ -25,13 +25,13 @@ function App() {
         <div class="container-fluid">
             <div class="row r1 ">
     {/* <!------------------- 1rd Column --------------------------------------> */}
-              <div class="col-md-4 col-sm-12 c1">
+              <div class=" c1">
                 <div class="input-group">
                     <FontAwesomeIcon className='icon-wrapper' icon={faCoffee} size="2xs" />
                     <div id="welcome">Welcome, Frankie!</div>
                 </div>    
                 {/* <!---------------------------------------------> */}
-                    <button class="btn btn-warning compose" type="button" onClick={handleShow}>COMPOSE</button>
+                    <button class="btn btn-info compose" type="button" onClick={handleShow}>COMPOSE</button>
                     {/* <!-- Modal --> */}
                     <Modal show={show} onHide={handleClose}>
                       <Modal.Header closeButton>
@@ -83,8 +83,8 @@ function App() {
                     <div class="left-options"> Trash</div>
               </div>
     {/* <!------------------- 2rd Column --------------------------------------> */}
-                <div class="col-md-4 col-sm-12 c2">
-                    <input id="search-bar" placeholder="Search for emails"/>
+                <div class="c2">
+                    <input class='input-bar' id="search-bar" placeholder="Search for emails"/>
                     <br></br>
                     <div 
                       className={`dl-horizontal box-1 ${clickedContainer === 1 ? 'selected':''}`} 
@@ -119,7 +119,7 @@ function App() {
                     </div>
                 </div>
     {/* <!------------------- 3rd Column --------------------------------------> */}
-                <div class="col-md-4 col-sm-12 c3 ">
+                <div class="c3 ">
                     { (clickedContainer===3) &&
                       <>
                         <div class="from-to">To:frankie@hotmail.com</div>
@@ -175,7 +175,7 @@ function App() {
                       <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
                     <div class="buttonCon">
-                    <button type="button" class="btn btn-warning" onClick={handleSubmit}>Reply</button>
+                    <button type="button" class="btn btn-info" onClick={handleSubmit}>Reply</button>
                     </div>
                 </div>
                 

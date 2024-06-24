@@ -2,8 +2,52 @@
   height: 100vh ;
 }
 
+/*------------------------------ media queries -----------------*/
+
+/* Equal to or wider then Desktop size*/
+.c1, .c2, .c3 {
+  width:33%;
+}
+
+button{
+  width: 50%; 
+}
+
+.input-bar{
+  width: 75%; 
+}
+
+/* Equal to or wider then tablet size*/
+@media only screen and (max-width: 991px) {
+  .c1, .c2{
+    width: 50%;
+  }
+  .c3{
+    width: 100%; 
+  }
+  button{
+    width: 40%;
+  }
+  .input-bar{
+    width: 100%; 
+  }
+}
+
+/* Equal to or wider then phone size*/
+@media only screen and (max-width: 767px) {
+  .c1, .c2, .c3 {
+    width: 100%;
+  }
+  button{
+    width: 33%; 
+  }
+  p{
+    font-size:12px;
+  }
+}
 
 /*------------------------------ 1st column -----------------*/
+
 .c1{
   background-color: rgb(75, 75, 75);
   color: rgb(253, 251, 251);
@@ -40,7 +84,6 @@ input, .icon-wrapper{
 .compose{
   margin:0 auto;
   padding: 8px;
-  width:90%;
 }
 
 #inbox.left-options{
@@ -56,7 +99,6 @@ input, .icon-wrapper{
   background-color: rgb(230, 230, 230);
 }
 #search-bar{
-  width: 100%;
   padding: 8px; 
   margin: 0 auto; 
   margin-top: 20px;
